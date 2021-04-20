@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textviewhome"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnaddpat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Patient"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/textviewhome"/>
+
+    <Button
+        android:id="@+id/btnadddoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Doctor"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/btnaddpat"/>
+
+    <Button
+        android:id="@+id/btnassign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Doctor"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnadddoc"/>
+
+    <Button
+        android:id="@+id/btndischarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discharge Patient"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/btnassign"/>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btndischarge"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Doctor">
+
+    <TextView
+        android:id="@+id/textviewadddoc"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:text="Add Doctor"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/docid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Doctor Name"
+        android:layout_below="@+id/textviewadddoc"/>
+
+    <EditText
+        android:id="@+id/degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Degree"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/docid"/>
+
+    <Button
+        android:id="@+id/btnaddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Doctor"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/degree"/>
+
+</RelativeLayout>
